@@ -22,10 +22,10 @@ class ViewController: UIViewController {
         
         factsDogURL.scheme = "https"
         factsDogURL.host = "dog-api.kinduff.com"
-        factsDogURL.path = "/api/facts?number=5"
+        factsDogURL.path = "/api/facts"
         
-//        let factsDogQuery = URLQueryItem(name: "facts", value: "")
-//        factsDogURL.queryItems = [factsDogQuery]
+        let factsDogQuery = URLQueryItem(name: "number", value: "5")
+        factsDogURL.queryItems = [factsDogQuery]
 //
         // Start of URL Request
       
